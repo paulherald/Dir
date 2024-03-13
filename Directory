@@ -1,0 +1,22 @@
+ubuntu@ip-172-31-46-18:~$ ls -l
+total 12
+-rw-rw-r-- 1 ubuntu ubuntu    0 Mar 12 13:47 demo.txt
+-rw-rw-r-- 1 ubuntu ubuntu    0 Mar 12 12:42 folder.txt
+-rw-rw-r-- 1 ubuntu ubuntu    0 Mar 13 11:11 hello
+-rw-rw-r-- 1 ubuntu ubuntu    0 Mar 12 13:56 hello.txt
+drwxrwxr-x 2 ubuntu ubuntu 4096 Mar 12 13:36 hello_file
+-rw-rw-r-- 1 ubuntu ubuntu    0 Mar 12 12:43 home.txt
+drwxrwxr-x 3 ubuntu ubuntu 4096 Mar 13 11:19 main
+drwxrwxr-x 2 ubuntu ubuntu 4096 Mar 13 11:32 plus
+ubuntu@ip-172-31-46-18:~$ chmod g-rx main
+ubuntu@ip-172-31-46-18:~$ chmod o+w main
+ubuntu@ip-172-31-46-18:~$ ls -l
+total 12
+-rw-rw-r-- 1 ubuntu ubuntu    0 Mar 12 13:47 demo.txt
+-rw-rw-r-- 1 ubuntu ubuntu    0 Mar 12 12:42 folder.txt
+-rw-rw-r-- 1 ubuntu ubuntu    0 Mar 13 11:11 hello
+-rw-rw-r-- 1 ubuntu ubuntu    0 Mar 12 13:56 hello.txt
+drwxrwxr-x 2 ubuntu ubuntu 4096 Mar 12 13:36 hello_file
+-rw-rw-r-- 1 ubuntu ubuntu    0 Mar 12 12:43 home.txt
+drwx-w-rwx 3 ubuntu ubuntu 4096 Mar 13 11:19 main
+drwxrwxr-x 2 ubuntu ubuntu 4096 Mar 13 11:34 plus
